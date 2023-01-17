@@ -1,4 +1,4 @@
-***Bài toán: Viết 1 func trả về một array chứa tất cả những elements của hai array, các element không trùng lặp nhau. Áp dụng với cả array và array object***
+**Bài toán: Viết 1 func trả về một array chứa tất cả những elements của hai array, các element không trùng lặp nhau. Áp dụng với cả array và array object**
 
 VD1: 
 ```javascript
