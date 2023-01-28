@@ -69,4 +69,17 @@ const getDifferentItem = function (arr1, arr2) {
       return [...new Set(newArr2)].map((item) => JSON.parse(item));
     }
   };
+________________________
+
+// Lession 3
+
+// function removeItem(...arg) {
+//     const [arr, ...removeList] = arg;
+//     return arr.filter((item) => !removeList.includes(item));
+// }
+
+function removeItem() {
+    const [arr, ...removeList] = arguments;
+    return arr.filter((item) => !removeList.includes(item));
+}
 
