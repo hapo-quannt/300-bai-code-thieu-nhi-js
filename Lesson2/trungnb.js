@@ -1,3 +1,43 @@
+//Lesion 1
+
+//1
+function getSameValue(arr1, arr2) {
+    return arr1.filter((item) => arr2.includes(item));
+    // return arr1.filter((item) => arr2.find(item));
+    // return arr1.filter((item) => arr2.findIndex(item) != -1);
+}
+
+//2 
+
+function getSameValue2(arr, arr2) {
+    const newArr = formatArray(arr);
+    const newArr2 = formatArray(arr2);
+    return newArr.filter((item) => newArr2.includes(item));
+}
+
+function formatArray(arr) {
+    return arr.map((item) => {
+        if (typeof item === "object" && !Array.isArray(item) && item !== null) {
+            const sorted = Object.keys(item)
+                .sort()
+                .reduce((accumulator, key) => {
+                    accumulator[key] = item[key];
+
+                    return accumulator;
+                }, {});
+
+            return JSON.stringify(sorted);
+        } else {
+            return JSON.stringify(item);
+        }
+    });
+}
+
+//Use Lodash
+_.isEqual(arr, arr2);
+
+_________________________________________
+// Lession 2
 const getDifferentItem = function (arr1, arr2) {
     const newArr1 = [...arr1, ...arr2];
     if (
@@ -29,3 +69,4 @@ const getDifferentItem = function (arr1, arr2) {
       return [...new Set(newArr2)].map((item) => JSON.parse(item));
     }
   };
+
