@@ -1,4 +1,4 @@
-Bài toán: Đưa ra 2 cách để tìm max element trong array và arrat object
+Bài toán: Đưa ra 2 cách để tìm max element trong array và array object
 
 VD:
 ```javascript
