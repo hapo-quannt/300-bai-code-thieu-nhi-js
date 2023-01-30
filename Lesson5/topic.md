@@ -11,3 +11,5 @@ VD:
 // 2 cách
 
 ```
+
+Bài toán: Tương tự bên trên tìm min.
