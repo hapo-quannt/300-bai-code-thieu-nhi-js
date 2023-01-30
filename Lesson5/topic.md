@@ -7,7 +7,7 @@ VD:
 // 2 cách
 
 // input: [{ id: 1, name: 'jack' },{ id: 2, name: 'may' },{ id: 3, name: 'shawn' },{ id: 4, name: 'tony' }]
-// output: { id: 4, name: 'tony' }
+// output: { id: 4, name: 'tony' } (max theo id)
 // 2 cách
 
 ```
